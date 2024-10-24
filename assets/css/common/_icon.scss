@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* icon */
+[class^="ico-"] {
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+//background 처리
+.ico-eye-off{
+	width: 16px;
+	height: 16px;
+    background-image: url("@/assets/images/icon/ico_eye_off.svg");
+}
+
+.ico-eye-on{
+	width: 16px;
+	height: 16px;
+    background-image: url("@/assets/images/icon/ico_eye_on.svg");
+}
+
+.ico-clear{
+	width: 16px;
+	height: 16px;
+    background-image: url("@/assets/images/icon/ico_clear.svg");
+}
+
+.ico-nodata{
+	width: 20px;
+	height: 20px;
+    background-image: url("@/assets/images/icon/ico_nodata.svg");
+}
+
+.ico-arrow{
+	width: 24px;
+	height: 24px;
+    background-image: url("@/assets/images/icon/ico_arrow.svg");
+}
+
+.ico-close{
+	width: 15px;
+	height: 15px;
+    background-image: url("@/assets/images/icon/ico_close.svg");
+}
