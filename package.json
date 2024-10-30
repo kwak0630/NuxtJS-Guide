@@ -12,13 +12,9 @@
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
     "nuxt-guide": "file:",
-<<<<<<< HEAD
     "swiper": "^5.4.5",
     "vue": "^2.7.10",
     "vue-awesome-swiper": "^4.1.1",
-=======
-    "vue": "^2.7.10",
->>>>>>> 955e6c762b1494f8bb156bdd9cc713d8326a5e05
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
   },

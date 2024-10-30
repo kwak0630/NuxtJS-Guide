@@ -31,11 +31,7 @@ export default {
       navigations: [
         {
           name: 'Index',
-<<<<<<< HEAD
           href: '/guide/guide'
-=======
-          href: '/guide'
->>>>>>> 955e6c762b1494f8bb156bdd9cc713d8326a5e05
         },
         {
           name: 'Color',
@@ -50,13 +46,10 @@ export default {
           href: '/guide/component'
         },
         {
-<<<<<<< HEAD
           name: 'Swiper',
           href: '/guide/swiper'
         },
         {
-=======
->>>>>>> 955e6c762b1494f8bb156bdd9cc713d8326a5e05
           name: 'Popup',
           href: '/guide/popup'
         },
