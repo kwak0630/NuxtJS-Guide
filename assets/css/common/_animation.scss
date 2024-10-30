@@ -19,6 +19,7 @@
 .slide-up-leave-to {
   transform: translateX(-50%) translateY(100%);
   opacity: 0;
+<<<<<<< HEAD
 }
 
 @keyframes progress {
@@ -28,4 +29,6 @@
   to {
     transform: translateX(0);
   }
+=======
+>>>>>>> 955e6c762b1494f8bb156bdd9cc713d8326a5e05
 }
