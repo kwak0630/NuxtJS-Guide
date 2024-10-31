@@ -173,7 +173,6 @@ export default ({
       const thumbsSwiper = this.$refs.swiperThumbs.$swiper
       const thumbsTopSwiper = this.$refs.swiperThumbsTop.$swiper
       thumbsTopSwiper.thumbs.swiper = thumbsSwiper
-      // thumbsSwiper.activeIndex = 0 
 
       // 썸네일 클릭 이벤트 추가
       thumbsSwiper.on('click', () => {
