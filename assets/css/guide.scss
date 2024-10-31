@@ -241,6 +241,16 @@ body {
 					background-color:#ffb89d;
 				}
 			}
+			&.swiper-thumbs{
+				.swiper-slide{
+					margin-top: 10px;
+					height: 100px;
+					line-height: 100px;
+					&.swiper-slide-thumb-active{
+						border: 1px solid #222;
+					}
+				}
+			}
 		}
 	}
 	&.popup {

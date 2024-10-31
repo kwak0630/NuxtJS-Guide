@@ -38,14 +38,30 @@
           <div slot="button-next" class="swiper-button-next"></div>
         </swiper>
 
-        <!-- <h3 class="guide-title2"></h3>
-        <swiper :options="swiperProgress">
-          <SwiperSlide v-for="slide in 3" :key="slide">
-            <strong>{{ slide }}</strong>
-          </SwiperSlide>
+        <h3 class="guide-title2">Thumbnail</h3>
 
-          
-        </swiper> -->
+        <swiper
+          :options="swiperThumbsTop"
+          ref="swiperThumbsTop"
+        >
+          <swiper-slide v-for="i in 5" :key="'top'+i">
+            <strong>{{ i }}</strong>
+          </swiper-slide>
+
+          <!-- navigation -->
+          <div slot="button-prev" class="swiper-button-prev"></div>
+          <div slot="button-next" class="swiper-button-next"></div>
+        </swiper>
+        <swiper
+          :options="swiperThumbs"
+          class="swiper-thumbs"
+          ref="swiperThumbs"
+        >
+          <swiper-slide v-for="i in 5" :key="'thumb'+i">
+            <strong>{{ i }}</strong>
+          </swiper-slide>
+        </swiper>
+
         <h3 class="guide-title2">Options ~</h3>
         <div class="swiper-box">
           slidesPerView: 1, // 보여질 갯수
@@ -107,23 +123,6 @@ export default ({
         },
         loop: true,
       },
-      swiperProgress: {
-        autoplay: {
-          delay: 3000
-        },
-        slidesPerView: 1.5,
-        spaceBetween: 10,
-        centeredSlides: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'progressbar',
-        },
-        loop: true,
-      },
       swiperOption3: {
         slidesPerView: 2,
         spaceBetween: 10,
@@ -148,7 +147,51 @@ export default ({
         },
         loop: true,
       },
+
+      swiperThumbsTop: {
+        initialSlide: 0,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        thumbs: {
+          swiper: null
+        }
+      },
+      swiperThumbs: {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        initialSlide: 0, 
+        slideToClickedSlide: true,
+      }
     }
   },
+  mounted() {
+    this.$nextTick(() => {
+      const thumbsSwiper = this.$refs.swiperThumbs.$swiper
+      const thumbsTopSwiper = this.$refs.swiperThumbsTop.$swiper
+      thumbsTopSwiper.thumbs.swiper = thumbsSwiper
+      // thumbsSwiper.activeIndex = 0 
+
+      // 썸네일 클릭 이벤트 추가
+      thumbsSwiper.on('click', () => {
+        const clickedIndex = thumbsSwiper.clickedIndex
+        if (typeof clickedIndex !== 'undefined') {
+          thumbsTopSwiper.slideTo(clickedIndex)
+        }
+      })
+
+      // 상단 슬라이더 변경 시 썸네일 업데이트
+      thumbsTopSwiper.on('slideChange', () => {
+        thumbsSwiper.slideTo(thumbsTopSwiper.activeIndex)
+      })
+
+      // 초기 인덱스 설정
+      thumbsSwiper.slideTo(0)
+      thumbsTopSwiper.slideTo(0)
+    })
+  }
 })
 </script>
