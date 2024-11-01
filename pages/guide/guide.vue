@@ -6,7 +6,6 @@
       <div class="guide-box index">
         <h3 class="guide-title2">Nuxt.js란</h3>
         <p>Nuxt.js는 Vue.js 개발 편의성을 높여주는 오픈소스 프레임워크로, <br/>Vue.js만으로 개발할때에 비해 생산성이 높아 최근 Vue.js로 개발하는 프로젝트에서 Nuxt를 많이 사용하고 있는 추세</p>
-       
         <br/>
         <ul>
           <li>코드 분할 자동화</li>
@@ -60,18 +59,23 @@
               "dev": "nuxt",
               "build": "nuxt build",
               "start": "nuxt start",
-              "generate": "nuxt generate"
+              "generate": "nuxt generate",
+              "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
             },
             "dependencies": {
               "core-js": "^3.25.3",
               "nuxt": "^2.15.8",
               "nuxt-guide": "file:",
+              "swiper": "^5.4.5",
               "vue": "^2.7.10",
+              "vue-awesome-swiper": "^4.1.1",
               "vue-server-renderer": "^2.7.10",
               "vue-template-compiler": "^2.7.10"
             },
             "devDependencies": {
+              "gh-pages": "^6.2.0",
               "node-sass": "^9.0.0",
+              "push-dir": "^0.4.1",
               "sass": "^1.80.3",
               "sass-loader": "^10.5.2",
               "webpack": "^4.47.0"
