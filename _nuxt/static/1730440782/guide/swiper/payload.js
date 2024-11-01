@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/guide/swiper", {data:[{}],fetch:{},mutations:void 0});

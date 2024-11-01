@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/guide/popup", {data:[{}],fetch:{},mutations:void 0});
