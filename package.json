@@ -20,6 +20,7 @@
     "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "node-sass": "^9.0.0",
     "push-dir": "^0.4.1",
     "sass": "^1.80.3",
