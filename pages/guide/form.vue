@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <div class="guide-box">
+      <div class="guide-box form">
         <h3 class="guide-title2">TextArea</h3>
         <div class="form-item">
           <Textarea 
@@ -70,7 +70,7 @@
         </div>
       </div>
 
-      <div class="guide-box">
+      <div class="guide-box form">
         <h3 class="guide-title2">Check Box</h3>
         <div class="form-item">
           <CheckBox value="chk1" checked id="chk1" />
@@ -88,7 +88,7 @@
         </div>
       </div>
 
-      <div class="guide-box">
+      <div class="guide-box form">
         <h3 class="guide-title2">Radio Button</h3>
         <div class="form-item">
           <RadioButton name="radio" value="radio1" id="radio1" />
@@ -107,7 +107,7 @@
         </div>
       </div>
 
-      <div class="guide-box">
+      <div class="guide-box form">
         <h3 class="guide-title2">Select Box</h3>
         <div class="form-item">
           <SelectBox :options="selectList" type="native" name="selectbox" />
@@ -129,7 +129,7 @@
         </div>
       </div>
 
-      <div class="guide-box">
+      <div class="guide-box form">
         <h3 class="guide-title2">Toggle Switch</h3>
         <div class="form-item">
           <ToggleSwitch name="toggleSwitch" />
@@ -139,7 +139,7 @@
         </div>
       </div>
       
-      <div class="guide-box">
+      <div class="guide-box form">
         <h3 class="guide-title2">Quantity</h3>
         <h4>help me....... minlength maxlength .....</h4>
         <div class="form-item col">
@@ -154,7 +154,7 @@
         </div>
       </div>
 
-      <div class="guide-box">
+      <div class="guide-box form">
         <h3 class="guide-title2">File Upload</h3>
         <div class="form-item">
           <FileUpload /><br/><br/>

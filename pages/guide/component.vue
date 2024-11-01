@@ -41,7 +41,9 @@
             <p>Tab Type ~~! Tab Tab<br/>Tab2Tab2Tab2Tab2Tab2Tab2Tab2Tab2Tab2Tab2</p>
           </tab>
         </tabs>
+      </div>
 
+      <div class="guide-box component">
         <h3 class="guide-title2">Accordion</h3>
         <!-- :selected="true" -->
         <Accordions>
@@ -67,8 +69,9 @@
             </p>
           </Accordion>
         </Accordions>
-
-        
+      </div>
+      
+      <div class="guide-box component">
         <h3 class="guide-title2">Tool Tip</h3>
         <ToolTip >
           툴팁 내용 툴팁 내용<br/>
@@ -86,7 +89,9 @@
         <ToolTip position="top">
           툴팁 position top left
         </ToolTip>
-
+      </div>
+      
+      <div class="guide-box component">
         <h3 class="guide-title2">No Data</h3>
         <NoData ico="nodata">
           <p>데이터가 없습니다.</p>
@@ -95,6 +100,12 @@
         <NoData>
           <p>데이터가 없습니다. 아이콘 제외 버전</p>
         </NoData>
+      </div>
+      
+      <div class="guide-box component component-btn">
+        <h3 class="guide-title2">Buttons</h3>
+        <TopButton />
+        <BackButton />
       </div>
     </div>
   </div>
@@ -107,6 +118,8 @@ import Accordions from '@/components/Component/Accordion/Accordions.vue';
 import Accordion from '@/components/Component/Accordion/Accordion.vue';
 import NoData from '@/components/Component/NoData/NoData.vue';
 import ToolTip from '@/components/Component/ToolTip/ToolTip.vue';
+import TopButton from '@/components/Component/Button/TopButton.vue';
+import BackButton from '@/components/Component/Button/BackButton.vue';
 
 export default ({
   components : { 
@@ -116,6 +129,8 @@ export default ({
     Accordion,
     NoData,
     ToolTip,
+    TopButton,
+    BackButton
   },
 })
 </script>

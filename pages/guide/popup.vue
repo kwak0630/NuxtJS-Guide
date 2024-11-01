@@ -45,7 +45,9 @@
             <button type="button" @click="closePopup('alert4')">확인</button>
           </template>
         </AlertPopup>
+      </div>
 
+      <div class="guide-box popup">
         <h3 class="guide-title2">Full Popup</h3>
         <button type="button" class="guide-btn" @click="openPopup('full1')">basic</button>
         <button type="button" class="guide-btn" @click="openPopup('full2')">button</button>
@@ -80,7 +82,9 @@
             <button type="button" @click="closePopup('full3')">확인</button>
           </template>
         </FullPopup>
-
+      </div>
+      
+      <div class="guide-box popup">
         <h3 class="guide-title2">Bottom Popup</h3>
         <button type="button" class="guide-btn" @click="openPopup('bottom1')">basic</button>
         <button type="button" class="guide-btn" @click="openPopup('bottom2')">button</button>
@@ -102,7 +106,9 @@
             <button type="button" @click="closePopup('bottom2')">확인</button>
           </template>
         </BottomPopup>
-        
+      </div>
+      
+      <div class="guide-box popup">
         <h3 class="guide-title2">Toast Popup</h3>
         <button type="button" class="guide-btn" @click="openPopup('toast1')">basic</button>
         <button type="button" class="guide-btn" @click="openPopup('toast2')">motion</button>

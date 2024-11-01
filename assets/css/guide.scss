@@ -253,6 +253,15 @@ body {
 			}
 		}
 	}
+	&.component{
+		&.component-btn{
+			button{
+				&+button{
+					margin-left: 15px;
+				}
+			}
+		}
+	}
 	&.popup {
 		.guide-btn{
 			padding: 15px 25px;

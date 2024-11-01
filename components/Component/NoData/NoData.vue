@@ -1,6 +1,6 @@
 <template>
   <div :class="['nodata-box']">
-    <i  v-if="ico" :class="icoClass"></i>
+    <i v-if="ico" :class="icoClass"></i>
     <slot></slot>
   </div>
 </template>

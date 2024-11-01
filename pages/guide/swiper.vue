@@ -37,9 +37,10 @@
           <div slot="button-prev" class="swiper-button-prev"></div>
           <div slot="button-next" class="swiper-button-next"></div>
         </swiper>
+      </div>
 
+      <div class="guide-box swiper">
         <h3 class="guide-title2">Thumbnail</h3>
-
         <swiper
           :options="swiperThumbsTop"
           ref="swiperThumbsTop"
@@ -61,7 +62,9 @@
             <strong>{{ i }}</strong>
           </swiper-slide>
         </swiper>
-
+      </div>
+      
+      <div class="guide-box swiper">
         <h3 class="guide-title2">Options ~</h3>
         <div class="swiper-box">
           slidesPerView: 1, // 보여질 갯수
