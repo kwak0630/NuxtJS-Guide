@@ -107,6 +107,11 @@
         <TopButton />
         <BackButton />
       </div>
+
+      <div class="guide-box component component-loading">
+        <h3 class="guide-title2">Loading</h3>
+        <Loading />
+      </div>
     </div>
   </div>
 </template>
@@ -120,6 +125,7 @@ import NoData from '@/components/Component/NoData/NoData.vue';
 import ToolTip from '@/components/Component/ToolTip/ToolTip.vue';
 import TopButton from '@/components/Component/Button/TopButton.vue';
 import BackButton from '@/components/Component/Button/BackButton.vue';
+import Loading from '@/components/Component/Loading/Loading.vue';
 
 export default ({
   components : { 
@@ -130,7 +136,8 @@ export default ({
     NoData,
     ToolTip,
     TopButton,
-    BackButton
+    BackButton,
+    Loading,
   },
 })
 </script>
