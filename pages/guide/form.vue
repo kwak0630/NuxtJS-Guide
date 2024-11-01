@@ -27,6 +27,10 @@
         <div class="form-item">
           <InputField type="password" value="pw123455r6" placeholder="비밀번호" id="text8" />
         </div>
+        <div class="form-item col">
+          <InputField type="text" value="" placeholder="우편번호" id="text9" />
+          <button type="button" class="btn-type">검색</button>
+        </div>
       </div>
 
       <div class="guide-box form">
