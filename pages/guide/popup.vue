@@ -2,7 +2,7 @@
 	<div class="guide-wrap">
     <AsideNav/>
     <div class="guide-content">
-      <h2 class="guide-title">{{$route.name}}</h2>
+      <h2 class="guide-title">Popup</h2>
       <div class="guide-box popup">
         <h3 class="guide-title2">Alert Popup</h3>
         <button type="button" class="guide-btn" @click="openPopup('alert1')">basic</button>

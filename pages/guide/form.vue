@@ -2,7 +2,7 @@
 	<div class="guide-wrap">
     <AsideNav/>
     <div class="guide-content">
-      <h2 class="guide-title">{{$route.name}}</h2>
+      <h2 class="guide-title">Form</h2>
 
       <div class="guide-box form">
         <h3 class="guide-title2">Input Field</h3>
@@ -170,7 +170,7 @@
 </template>
 
 <script>
-  import InputField from '@/components/Form/InputField.vue';
+import InputField from '@/components/Form/InputField.vue';
 import Textarea from '@/components/Form/Textarea.vue';
 import CheckBox from '@/components/Form/CheckBox.vue';
 import RadioButton from '@/components/Form/RadioButton.vue';

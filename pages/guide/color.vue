@@ -2,7 +2,7 @@
 	<div class="guide-wrap">
     <AsideNav/>
     <div class="guide-content">
-      <h2 class="guide-title">{{$route.name}}</h2>
+      <h2 class="guide-title">Color</h2>
       <div class="guide-box color">
         <span class="CBrand">$CBrand<br/>#FFBF00</span>
         <br>

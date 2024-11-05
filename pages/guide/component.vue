@@ -2,7 +2,7 @@
 	<div class="guide-wrap">
     <AsideNav/>
     <div class="guide-content">
-      <h2 class="guide-title">{{$route.name}}</h2>
+      <h2 class="guide-title">Component</h2>
       <div class="guide-box component">
         <h3 class="guide-title2">Tab</h3>
         <tabs>

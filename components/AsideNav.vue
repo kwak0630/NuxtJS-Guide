@@ -53,6 +53,10 @@ export default {
           name: 'Popup',
           href: '/guide/popup'
         },
+        {
+          name: 'Video',
+          href: '/guide/video'
+        },
       ]
     }
   }

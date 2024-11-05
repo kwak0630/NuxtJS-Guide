@@ -2,7 +2,7 @@
 	<div class="guide-wrap">
     <AsideNav/>
     <div class="guide-content">
-      <h2 class="guide-title">{{$route.name}}</h2>
+      <h2 class="guide-title">Swiper</h2>
       <div class="guide-box swiper">
         <h3 class="guide-title2">Basic</h3>
         <swiper :options="swiperBasic">

@@ -13,7 +13,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/sally.png' }
-    ]
+    ],
   },
 
   target: 'static', // 정적 웹사이트임을 명시

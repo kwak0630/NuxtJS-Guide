@@ -2,7 +2,7 @@
 	<div class="guide-wrap">
     <AsideNav/>
     <div class="guide-content">
-      <h2 class="guide-title">{{$route.name}}</h2>
+      <h2 class="guide-title">Index</h2>
       <div class="guide-box index">
         <h3 class="guide-title2">Nuxt.js란</h3>
         <p>Nuxt.js는 Vue.js 개발 편의성을 높여주는 오픈소스 프레임워크로, <br/>Vue.js만으로 개발할때에 비해 생산성이 높아 최근 Vue.js로 개발하는 프로젝트에서 Nuxt를 많이 사용하고 있는 추세</p>
