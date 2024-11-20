@@ -37,6 +37,10 @@ export default {
           name: 'Color',
           href: '/guide/color'
         },
+        // {
+        //   name: 'Text',
+        //   href: '/guide/text'
+        // },
         {
           name: 'Form',
           href: '/guide/form'

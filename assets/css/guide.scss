@@ -286,6 +286,11 @@ body {
 			}
 		}
 	}
+	&.text{
+		p{
+			font-size: 30px;
+		}
+	}
 	&.popup {
 		.guide-btn{
 			padding: 15px 25px;
