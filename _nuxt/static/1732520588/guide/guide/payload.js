@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/guide/guide", {data:[{}],fetch:{},mutations:void 0});
