@@ -112,6 +112,42 @@
         <h3 class="guide-title2">Loading</h3>
         <Loading />
       </div>
+      <div class="guide-box component">
+        <h3 class="guide-title2">draggable</h3>
+        <draggable
+          class="drag-wrap list-group"
+          :list="list1"
+          :group="{ name: 'people', pull: 'clone', put: false }"
+          @change="log"
+        >
+          <div
+            class="drag-item"
+            v-for="element in list1"
+            :key="element.name"
+          >
+            {{ element.name }}
+          </div>
+        </draggable>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <draggable
+          class="drag-wrap list-group"
+          :list="list2"
+          group="people"
+          @change="log"
+        >
+          <div
+            class="drag-item"
+            v-for="element in list2"
+            :key="element.name"
+          >
+            {{ element.name }}
+          </div>
+        </draggable>
+      </div>
     </div>
   </div>
 </template>
@@ -126,6 +162,7 @@ import ToolTip from '@/components/Component/ToolTip/ToolTip.vue';
 import TopButton from '@/components/Component/Button/TopButton.vue';
 import BackButton from '@/components/Component/Button/BackButton.vue';
 import Loading from '@/components/Component/Loading/Loading.vue';
+import draggable from 'vuedraggable'
 
 export default ({
   components : { 
@@ -138,6 +175,27 @@ export default ({
     TopButton,
     BackButton,
     Loading,
+    draggable
   },
+  data() {
+    return {
+      list1: [
+        { name: "John", id: 1 },
+        { name: "Joao", id: 2 },
+        { name: "Jean", id: 3 },
+        { name: "Gerard", id: 4 }
+      ],
+      list2: [
+        { name: "Juan", id: 5 },
+        { name: "Edgard", id: 6 },
+        { name: "Johnson", id: 7 }
+      ]
+    };
+  },
+  methods: {
+    log: function(evt) {
+      window.console.log(evt);
+    }
+  }
 })
 </script>

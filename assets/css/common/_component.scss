@@ -235,3 +235,15 @@
 		height: 100%;
 	}
 }
+
+//drag
+.drag-wrap{
+	.drag-item{
+		padding: 15px 10px;
+		background-color: #fff;
+		border: 1px solid $CBg2;
+		&+.drag-item{
+			margin-top: 10px;
+		}
+	}
+}
